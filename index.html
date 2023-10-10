@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<head>
+
+	<title>iWebThinkBig.com</title>
+	
+	<meta property="og:image" content="//iwebthinkbig.com/images/et.png"/>
+	<meta property="og:image:secure_url" content="//iwebthinkbig.com/images/et.png" />
+	<meta property="og:title" content="iWebThinkBig.com"/><!-- custom meta -->
+	<meta property="og:site_name" content="iWebThinkBig.com"/><!-- custom meta -->
+	<meta property="og:type" content="website"/><!-- custom meta -->
+	<meta property="og:description" content="Join iWebThinkBig.com - become SEO consultant, start turn-key online business today!"/><!-- custom meta -->
+  
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Mulish:wght@1000&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+	
+
+<link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<link href="//fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Roboto:wght@100&display=swap" rel="stylesheet">
+	
+
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+
+<script>
+var mobileInd = false;
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+// mobile device detected
+	mobileInd = true;
+}
+
+</script>
+<style>
+html, body {margin:0; padding: 0; scroll-behavior: smooth;}
+
+html {width: 100%;}
+
+#bkg{position: fixed; background-image: url("/images/shop.jpg");
+background-size: 100%; z-index:0; width: 100%; height: 1200px; opacity: 0.2;}
+
+#progress-outer {border: 1px solid #7D999E; height: 5px; width: 80%; margin: 20px auto 0 auto;}
+#progress-outer.hid {border: none; visibility: hidden; margin: 0; height: 0; overflow: hidden}
+
+#progress  {transition: all 1s; background-color: #08A86B; width: 0; height: 5px}
+#progress.step1 {transition: all 1s; width: 25%}
+#progress.step2 {transition: all 1s; width: 50%}
+#progress.step3 {transition: all 1s; width: 90%}
+#progress.step4 {transition: all 1s; width: 100%}
+
+
+body {background-color:#002830; font-size: 20px; font-family: 'Roboto', sans-serif; line-height: 1.8; color:#fff; width: 100%}
+#main {width: 90%; margin: 0 auto 100px auto; overflow: hidden; }
+body a {color: #fff}
+
+#err1.active {color: #fff;
+    background-color: #6D1311;
+	padding: 5px 0 5px 10px;
+    width: calc(100% - 20px);
+}
+
+#contact, .block {
+    width: 300px;
+    margin: 50px auto;}
+#contact input, #contact textarea {font-weight: 400; padding: 5px; margin: 3px auto; width: calc(100% - 20px);
+font-size: 18px;
+    font-family: 'roboto', sans-serif;}
+
+input.err{    background-color: #F39784;}
+	
+.btn {
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    padding: 5px;
+    width: 80%;
+    margin: 25px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.btn:hover {color: #fff; background-color: #3E5E64}
+</style>
+<style>
+.left {width: 90%; margin: 0 auto}
+/*
+.left, .right {display:block; float: left}
+.left {width: calc(75% - 100px); padding-right: 100px}
+.right {width: calc(25% - 2px); border-left: 1px solid #fff}
+.right img {width: 80%}
+
+*/
+
+#grid {border-top: 1px solid #fff; padding-top: 30px}
+.spot {display: block; width: 30%; margin: 0 20px 20px 0; float: left}
+
+
+.clear {width: 100%; clear:both}
+.clearTop {width: 100%; clear:both; border-top:1px solid #fff; margin: 5px 0 20px 0}
+.flex {
+	display: flex; /* or inline-flex */
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.fItem{
+	display: block;
+	padding: 10px;
+	margin: 10px;
+	width: calc(30% - 2px);
+	min-width: 300px;
+	order: 1; 	
+	margin: 0 auto
+}
+.fItem img {width: 100%}
+
+
+#step1 ul, #stepOther ul, #shop ul {list-style: none; padding: 0; margin: 0px auto 0 auto }
+#step1 li, #stepOther li, #shop li {cursor: pointer;
+    border: 1px solid;
+    padding: 5px 5px 5px 15px;
+    margin: 10px 0;}
+#more li{padding: 5px 30px 5px 30px; text-align: center;}
+#step1 li:hover, #stepOther li:hover, #shop li:hover {color: #fff; background-color: #3E5E64}
+
+#step3 {padding-top: 50px;}
+
+.hid {
+    height: 0;
+    padding: 0;
+    margin: 0 auto;
+    transition: height 0.5s;
+    overflow: hidden;
+    border: none;
+}
+
+h1 {
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 1.3em;
+    font-family: 'Playfair Display', serif;
+
+}
+		
+.testimonials {min-width: 320px; margin: 0 auto}
+.testimonials p {font-family: 'Roboto', sans-serif; font-size:22px; line-height: 1.5; color:#fff;}
+.testimonials img.face {width:200px; float:left; margin: 0 20px 10px 0}
+
+.samples img { dispaly:block; width: calc(25% - 20px); padding: 10px}
+.samples2 img { dispaly:block; width: calc(35% - 20px); padding: 10px}
+
+
+
+#video1{    width: calc(100% - 10px);
+    display: block;
+	z-index: 10;
+    position: relative; border-radius: 10px;
+    border: 5px solid #fff;
+	margin: 0 auto}
+	
+	
+.sep {height: 20px;
+    width: 100%;
+	border-bottom: 1px solid #eee}
+
+.container {
+background-color: #002830;
+  width: 100%
+}
+.item {
+  flex-basis:  | auto; 
+}
+
+#col2-1 {width: 60%; margin-bottom: 40px;}
+#col2-2 {width: calc(40% - 40px); padding-left: 40px}
+
+.colB2-1 {width: 40%}
+.colB2-2 {width: calc(60% - 40px); padding-left: 40px}
+
+.tl {text-align: left}
+.tr {text-align: right}
+.tr ul {    width: fit-content;
+    float: right;}
+
+#col2-2 {color:#fff}
+
+.middle{position:relative; display: flex; flex-direction: row;
+    flex-wrap: wrap;}
+
+#top {width: 100%; height: 40px; background-color:#6D1311; position: relative;}
+#top span{ 
+	font-family: 'Titan One', cursive;
+	color:#8D3B3A;  margin: 3px auto;
+    width: fit-content;
+    display: block;}
+	
+#footer {background-color:#01181C; width: 100%; height: 120px; color:#3E5E64; text-align: center;  position: relative;}
+
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+	.middle{ width: 95%; margin: 0 auto; padding-top: 20px;}
+	#col2-1, #col2-2 {width: 100%; padding: 0}
+	{}
+ 
+}
+
+@media screen and (min-width: 1200px) {
+	.middle{ width: 80%; min-width: 700px; margin: 0 auto; padding-top: 70px;}
+	#col2-1 {width: 60%}
+	#col2-2 {width: calc(40% - 40px); padding-left: 40px}
+}
+
+#bt2 
+{background: linear-gradient(to right, #fff 50%, #002830 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+#bt2.step2 {
+    background-position: left;
+}
+
+#btSend,  #btDone{height:34px}
+#btSend.hid, #btLoading.hid, #btDone.hid{height:0px}
+
+.hid, .loading.hid  {height: 0; overflow: hidden; display: block}
+
+.loading {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 20px;
+}
+.loading div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #002830;
+  animation: loading 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.loading div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.loading div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.loading div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes loading {
+  0% {
+    top: -6px;
+    height: 64px;
+	}
+	50%, 100% {
+		top: 4px;
+		height: 15px;
+	}
+}
+
+.checkmark {
+    display:block;
+    width: 22px;
+    height:22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+	margin:0 auto;
+	    top: 10px;
+    position: relative;
+}
+
+.checkmark_stem {
+    position: absolute;
+    width:3px;
+    height:19px;
+    background-color:#fff;
+    left:11px;
+    top:-5px;
+}
+
+.checkmark_kick {
+    position: absolute;
+    width:13px;
+    height:3px;
+    background-color:#fff;
+    left:1px;
+    top:12px;
+}
+
+#shop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+	padding-top: 10px;
+}
+#shop.hid, #flex3.hid {height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;}
+	
+#flex2, .flex2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.news {margin: 20px auto;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: #fff;
+}
+.news img {
+    width: 100%;
+    margin:  0;
+}
+.wow { font-size: 100px;
+font-family: 'Mulish', sans-serif;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #fff;
+    -webkit-mask: url(/images/pattern.png);
+    margin: 30px auto 10px auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+	opacity: 0.8;
+    text-align: center;
+    font-size: 120px;
+	font-size: 9vw;
+    line-height: 0.9;}
+	
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+	#video1 {width: 95%}
+	#col2-1 {width: 100%}
+	#col2-2 {width: 95%; margin: 0 auto}
+	.news {width: calc(95% - 100px);	
+}
+
+@media screen and (min-width: 1200px) {
+	#video1{    width: calc(90% - 20px)}
+	#col2-1 {width: 60%}
+	#col2-2 {width: calc(40% - 80px); padding-left: 40px}
+	.news {width: 30%;}
+}
+</style>
+
+<script>
+var projectType = '';
+var projectReady = '';
+var errorInput = "";
+
+function project(arg){
+	projectType = arg;
+	$("#step1").addClass("hid");
+	$("#step2").removeClass("hid");
+	$("#progress-outer").removeClass("hid");
+	$("#progress").addClass("step2");
+}
+function fEmail_start(){
+
+	$("#btSend").addClass("hid");
+	$("#btLoading").removeClass("hid");
+	$("#bt2").addClass("step2");
+	$("#btDone").addClass("hid");
+}
+
+function fEmail_done(){
+	$("#bt2").removeClass("step2");
+	$("#btLoading").addClass("hid");
+	$("#btDone").removeClass("hid");
+	
+	$("#bt2").removeClass("step2");
+}
+
+function fEmail_reset(){
+	$("#btSend").removeClass("hid");
+	$("#btLoading").addClass("hid");
+	$("#btDone").addClass("hid");
+	$("#bt2").removeClass("step2");
+}
+function fEmail(){
+
+	$("#progress").addClass("step4");
+	
+	var errStr = '<i style="font-size:24px; color:#c2c23a" class="fa">&#xf071;</i> - ';
+	try
+	{
+		clearError();
+		
+		if (true)
+		{
+		
+			if($("input[id=sName]").val().trim() == ''){
+				errorInput = "sName";
+				setError("Please enter info above");
+				fEmail_reset();
+			}else if($("#sEmail").val().trim() == '') {
+				errorInput = "sEmail";
+				setError("Please enter info above");
+				fEmail_reset();
+			}else if($("input[id=sPhone]").val().trim() == ''){
+				errorInput = "sPhone";
+				setError("Please enter info above");
+				fEmail_reset();
+			}
+			else
+			{
+				var str = "";
+				
+				submitInd = 0;
+				
+				str += "&name="+encodeURIComponent($("#sName").val());
+				str += "&phone="+encodeURIComponent($("#sPhone").val());
+				str += "&email="+encodeURIComponent($("#sEmail").val());
+				str += "&msg=project:"+projectType+"| "+encodeURIComponent($("#sMsg").val());
+				
+				fEmail_start();
+				
+				$.ajax({
+				  url: "/ajax/email_ajax.php?task=email"+str,
+				  context: document.body
+				}).done(function(msg) {
+					fEmail_done();
+					$("#step2").addClass("hid");
+					$("#step3").removeClass("hid");
+	
+					fReset();
+				}).fail(function(msg) {
+					alert( "error1" + msg );
+				  });
+				
+			}
+		}
+	
+	}
+	catch(e)
+	{	
+		alert("err: " + e);
+	}
+}
+
+function fReset(){
+	$("#sName").val('');
+	$("#sPhone").val('');
+	$("#sEmail").val('');
+	$("#sMsg").val('');
+
+}
+
+function setError(txt){
+	$("#"+errorInput).addClass("err");
+	$("#err1").html("Please enter info above");
+	$("#err1").addClass("active"); 
+}
+function clearError(){
+	$("#"+errorInput).removeClass("err");
+	$("#err1").html("");
+	$("#err1").removeClass("active"); 
+}
+</script>
+<script>
+function shop(arg){
+
+	switch (arg){
+	
+		case 1:
+			$("#shop").removeClass("hid");
+			//window.scrollTo(0, 500); 
+			
+			var element = document.getElementById("flex2");
+
+			element.scrollIntoView();
+		break;
+		
+		case 2:
+			
+			$("#flex3").removeClass("hid");
+			
+			var element = document.getElementById("more");
+
+			element.scrollIntoView();
+			$("#more").addClass("hid");
+		break;
+		
+		
+	}
+}
+
+function ini(){
+	var str = window.location.search.replace('?', '');
+	str = str.split("&");
+	
+	for (i=0;i<str.length;i++){
+		var b = str[i].split('=');
+		
+		if(b[0] == 'l' && b[1] == 1){
+		
+			console.log('showSendLead');
+			GLCHshowSendLead();
+		}
+	}
+}
+</script>
+
+</head>
+
+<body onload="ini()">
+<div id="bkg"></div>
+
+	<div id="top" style=""><span>Eugene Teslya</span></div>
+		<div class="container" style="position: relative; z-index: 10;  padding-bottom: 100px;">
+		<div class="middle" style="position: relative; z-index: 10;">
+	
+		<div id="col2-1" class="col2 item">
+				<video controls autoplay muted id="video1"><source src="/images/et-video2.mp4" type="video/mp4"></video>
+				
+		</div>
+		
+		<div id="col2-2" class="col2 item">
+		
+		
+			<h1 >Start your project</h1>
+					<div id="progress-outer" class="hid">
+						<div id="progress">
+						</div>
+					</div>
+					
+					<div id="step1">
+						<ul id="ul1">
+							<li onclick="project('REVAMP EXISTING WEBSITE')">REVAMP EXISTING WEBSITE</li>
+							<li onclick="project('BUILD NEW WEBSITE')">BUILD NEW WEBSITE</li>
+							<li onclick="project('SEO')">SEO</li>
+							<li onclick="project('CREATE SALES CHANNELS')">CREATE SALES CHANNELS</li>
+							<li onclick="project('OTHER MARKETING PROJECT')">OTHER MARKETING PROJECT</li>
+						</ul>
+						
+					</div>
+					
+			
+						
+			
+			
+			<div id="step2" class="hid">
+					
+				<div id="contact" class="">
+						
+						<input type="text" id="sName" placeholder="Name" />
+						<input type="text" id="sEmail" placeholder="Email" />
+						<input type="text" id="sPhone" placeholder="Phone" />
+						<textarea rows="7" id="sMsg" > </textarea>
+						<div id="err"></div>
+						<div class="btn" id="bt2" onclick="fEmail()">
+							<div id="btSend">Send</div>
+							<div id="btLoading" onclick="fEmail()" class="loading hid"><div></div><div></div><div></div></div>
+							<div id="btDone" class="hid">
+							<span class="checkmark" >
+								<div class="checkmark_stem"></div>
+								<div class="checkmark_kick"></div>
+							</span>
+							</div>
+						</div>						
+					</div>
+			
+			</div>
+			
+			<div id="step3" class="hid" style="text-align:center">
+				<span> Thank you for your inquiry. <br/>I will reach out to you soon.</span>
+				
+			</div>
+					
+			
+			<div id="stepOther">
+				<h1 >Other local resources:</h1>
+				<ul>
+					<li  onclick="shop(1)">SHOP MY NETWORK</li>
+					<li><div id="getleadchecker-modal-btn" data-user-id="101" data-user-func="getleadchecker-usFunc">LEAD CHECKER</div></li>
+					<li><div id="aiis_modal-btn" data-user-id="101" data-user-func="aiis_usFunc">AI CHAT BOT FOR RESTAURANTS</div></li>
+					<li><a href="https://thebrandofme.biz/ai/" style="text-decoration: none;"><div >AI CHAT BOT FOR COACHES</div></a></li>
+					<li><div id="notarobot-modal-btn" data-user-id="101" data-user-func="aiis_usFunc">NOT A ROBOT TEST</div></li>
+					
+				</ul>
+
+			</div>
+			
+						
+						
+		</div> 
+	</div>
+	
+	</div>
+	<div id="shop" class="middle container hid" style="position: relative; z-index: 10; background: none">
+	
+		<div class="wow"  >SHOP MY NETWORK</div>
+		
+		
+			<div id="flex2" class=" " style="height:50%; padding: 20px 0 70px 0;">
+			
+				
+				<a href="https://unlimitedlocalseo.com/" class="news"><div><img src="/images/partners/unlimited-local-seo.jpg" /></div></a>
+
+				<a href="#" class="news"><div><img src="/images/partners/local-jobs-club.jpg" /></div></a>
+				<a href="#" class="news"><div><img src="/images/partners/promo-business.jpg" /></div></a>
+		
+			</div>
+			
+				<ul id="more">
+					<li onclick="shop(2)">MORE</li>
+				</ul>
+			
+			<div id="flex3" class="flex2 hid" style=" ">
+			
+				
+				<a href="#" class="news"><div><img src="/images/partners/novapro-kitchen.jpg" /></div></a>
+
+				<a href="https://albertsconstructionnj.com/" class="news"><div><img src="/images/partners/Alberts-Construction-LLC.png" /></div></a>
+				<a href="#" class="news"><div><img src="/images/partners/marketing madness.jpg" /></div></a>
+		
+			</div>
+			
+			
+	</div>
+
+<div id="footer">
+&copy; iWebThinkBig.com
+
+</div>
+	
+
+	
+	<script type="text/javascript" src="//getleadchecker.com/api/v1/script.js"></script>
+	<script type="text/javascript" src="//iwebthinkbig.com/api/v1/script.js"></script>
+	<script type="text/javascript" src="//iwebthinkbig.com/api/norobot-test/script.js"></script>
+
+</html>
